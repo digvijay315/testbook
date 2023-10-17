@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            display: flex;
+            width: 100%;
+            height: 40px;
+            position: relative;
+        }
+        #linkdin{
+            margin-left: 150px;
+            margin-top: 10px;
+            position: relative;
+        }
+        .container{
+            background-color:rgb(175, 170, 170);
+            height: 1200px;
+            width: 100%;
+            margin: 10px;
+            position: relative;
+        }
+        #search{
+            background-color: rgb(160, 154, 154);
+            border-radius:5px;
+            height: 30px;
+            width: 200px;
+            display: inline-block;
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 10px;
+            padding-left: 30px;
+        }
+        #searchicon{
+            position: absolute;
+            top: 18px;
+            left: 200px;
+        }
+        .secondheader{
+            display: flex;
+            
+            margin-left: 450px;
+            width: 100%;
+            column-gap: 20px;
+        }
+        .home{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+         .network{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+         .jobs{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+         .message{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+         .notification{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+       
+        #face{
+            margin-left: 30px;
+            border-radius: 50p;
+            position: relative;
+        }
+        .drop {
+            z-index: 2;
+            position: absolute;
+            top: 40px;
+            width: 150px;
+            text-align: center;
+            list-style-type: none;
+            background-color: rgb(161, 187, 13);
+        }
+       .drop a{
+        display: none;
+        text-decoration: none;
+        line-height: 30px;
+       }
+       .face:hover .drop a{
+        display: block;
+       }
+       ul li a:hover{
+        background-color: rgb(69, 179, 36);
+       }
+        .statement{
+            height: 40px;
+            line-height:40px ;
+        }
+        .left{
+            background-color: rgb(241, 237, 237);
+            width: 200px;
+            height: 500px;
+            position: absolute;
+            margin-top: 20px;  
+            margin-left: 100px;
+            border-radius: 20px;
+            z-index: 1;
+        }
+      .left img{
+        display: flex;
+        position: absolute;
+      }
+      #Profile{
+        margin-top: 50px;
+        margin-left: 70px;
+        border-radius: 50px;
+      }
+      .left h3{
+        position: relative;
+        margin-top: 100px;
+        margin-left: 30px;
+      }
+      .left p{
+        text-align: center;
+        font-size: 12px;
+      }
+      .right{
+            background-color:rgb(175, 170, 170);
+            width: 200px;
+            height: 800px;
+            position: absolute;
+            margin-top: 20px;  
+            margin-left: 75%;
+            border-radius: 20px;
+            z-index: 1;
+      }
+      .first{
+            background-color: rgb(241, 237, 237);
+            width: 49%;
+            height: 100px;
+            position: absolute;
+            margin-top: 20px;  
+            margin-left: 24%;
+            border-radius: 20px;
+            z-index: 1;
+            padding-top: 10px;
+            padding-left: 10px;
+      }
+      .second{
+            background-color: rgb(241, 237, 237);
+            width: 49%;
+            height: 480px;
+            position: absolute;
+            margin-top: 135px;  
+            margin-left: 24%;
+            z-index: 1;
+      }
+      .third{
+            background-color: rgb(241, 237, 237);
+            width: 49%;
+            height: 520px;
+            position: absolute;
+            margin-top: 620px;  
+            margin-left: 24%;
+            z-index: 1;
+      }
+      
+      
+      #myntra{
+        float: left;
+        clear: right;
+      }
+      #post{
+        width: 90%;
+        height: 50%;
+        border-radius: 50px;
+      }
+     .left > ul {
+        list-style-type: circle;
+        padding-left: 20px;
+        font-size: 13px;
+     }
+     .news1{
+        position: relative;
+        background-color: rgb(243, 234, 234);
+        height: 220px;
+        width: 100%;
+        border-radius: 8px;
+        padding: 10px;
+     }
+     .news1>ul{
+        padding-left: 10px;
+     }
+     .news2{
+        margin-top: 10px;
+        position: relative;
+        background-color: rgb(247, 240, 240);
+        height: 200px;
+        width: 100%;
+        border-radius: 8px;
+        padding: 10px;
+     }
+     .news2>ul{
+        padding-left: 10px;
+     }
+     .news3{
+        margin-top: 10px;
+        position: relative;
+        background-color: rgb(247, 240, 240);
+        height: 400px;
+        width: 100%;
+        border-radius: 8px;
+        padding: 10px;
+     }
+     .footer{
+        position: absolute;
+        height: 50px;
+        width: 100%;
+        background-color:rgb(175, 170, 170);
+        margin-top: 1200px;
+     }
+    </style>
+</head>
+<body>
+        <!--this is header part.-->
+
+
+    <div class="header">
+        <div class="firstheader">
+            <img id="linkdin" src="LinkedIn logo.png" height="30px" width="30px" class="linkdin" alt="linkdin logo">
+            <input type="search" placeholder="search" id="search">
+           <i class="fa-solid fa-magnifying-glass" id="searchicon"></i>
+        </div>
+        <!--this part is for linkdin icon and search bar.-->
+
+        <!--this part for home,network,jobs,message and notification buttons-->
+
+
+        <div class="secondheader">
+            <div class="home">
+                <a href="#"><i class="fa-solid fa-house"></i></a>
+                <p>Home</p>
+            </div>
+            <div class="network">
+                <a href="#"><i class="fa-solid fa-hospital-user"></i></a>
+                <p>My Netwoek</p>
+            </div>
+            <div class="jobs">
+               <a href="#"> <i class="fa-solid fa-briefcase"></i></a>
+                <p>Jobs</p>
+            </div>
+            <div class="message">
+                <a href=""><i class="fa-solid fa-message"></i></a>
+                <p>Messaging</p>
+            </div>
+            <div class="notification">
+               <a href="#"> <i class="fa-solid fa-bell"></i></a>
+                <p>Notification</p>
+            </div>
+
+            <!--this part for face icon. here i use hover efect on face(not use frop down button)-->
+
+
+            <div class="face" style="border-left: 2px solid rgb(126, 122, 122);">
+            <img src="https://www.shutterstock.com/image-vector/people-profile-silhouettes-vector-illustration-260nw-1710115132.jpg"
+            style="height: 40px; width: 40px;" alt="face" id="face">
+            <ul class="drop">
+                <li><a href="#">Home</a></li>
+                 <li><a href="#">Search</a></li>
+                  <li><a href="#">Check Status</a></li>
+                  <li><a href="#">New</a></li>
+                  <li><a href="#">LogOut</a></li>
+               </ul>
+            </div>
+            <div class="statement">
+                <p style="font-size: 15px;">Try Premiun free for 1 month</p>
+            </div>
+         </div>
+    </div>
+
+    <!--end of part 1 whic is header part-->
+
+    <!--now stat 2nd main part whic is left section,middile section and right section-->
+
+    <!--this part is left section where i show my personal details-->
+
+    <div class="container">
+        <div class="left">
+            <img src="background.jpg" alt="background image" style="height: 60px; width: 100%; border-top-left-radius: 20px;border-top-right-radius: 20px;">
+            <img src="Profile image.png" alt="Profile" height="50px" width="50px" id="Profile">
+            <h3>Digvijay kumar</h3>
+            <p>Forex trader and crypto market</p><br>
+            <hr>
+            <p style="text-align: left; padding-left: 10px;">Email:digvijaykumar.315@gmail.com</p>
+            <p style="text-align: left;padding-left: 10px;">contact:7047752434</p>
+            <p style="text-align: left;padding-left: 10px;">Address: Dumka jharkhand</p>
+            <p style="text-align: left;padding-left: 10px;">Language:Hindi,English</p><br>
+            <hr>
+            Skills:
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java Script</li>
+                <li>C#</li>
+                <li>Sql</li>
+            </ul><br>
+            <hr>
+            Hobbies:
+             <ul>
+                <li>Playing Cricket</li>
+                <li>Online Gaming</li>
+                <li>Net Surfing</li>
+                <li>Listing Musin</li>
+                <li>Reading books</li>
+            </ul><br>
+        </div>
+
+        <!--end of left section-->
+
+        <!--this section is middile section which id divided by 3 part-->
+
+        <div class="middile">
+
+            <!--this is first part of middile section-->
+
+
+            <div class="first">
+                <img src="Profile image.png" alt="profile" height="50px"width50px style="border-radius: 50px; float: left;">
+                <input type="text" id="post" placeholder="start a post" style="padding-left: 10px;">
+                <i class="fa-regular fa-images" style="padding-top: 20px;"></i> Photo
+                <i class="fa-solid fa-video" style="padding-left: 40px;"></i>Video
+                <i class="fa-solid fa-calendar-days" style="padding-left: 40px;"></i>Event
+                <i class="fa-solid fa-newspaper" style="padding-left: 40px;"></i>Write artical 
+            </div>
+            <!--end of first part-->
+
+            <!--this is second part-->
+
+
+            <div class="second" style="padding: 5px;">
+                <img src="myntra logo.jpg" alt="myntra logo" height="50px" width="50px" id="myntra">
+                <p>Myntra Fashion</p>
+                <i class="fa-solid fa-ellipsis" style="float: right; padding-right: 10px;"></i>
+                <p style="font-size: 10px;">792,456 Followers </p>
+                <p style="font-size: 10px;">Promoted</p><br>
+                <img src="Demo post image.jpg" alt="demo image" width="650px"><br>
+                <img src="Like.svg" alt="like">
+                <img src="Appreciate.svg" alt="appricate">
+                <img src="Clap.svg" alt="clap">
+                
+                <span style="padding-left: 10px;">20. Comments</span>
+                <hr><br>
+                <a href="#"><i class="fa-regular fa-thumbs-up" style="margin-left: 10px;"></i></a>Like
+                <a href="#"><i class="fa-regular fa-comment" style="padding-left: 20px;"></i></a>Comment
+                <a href="#"><i class="fa-solid fa-share" style="padding-left: 20px;"></i></a>Share
+                <a href="#"><i class="fa-solid fa-paper-plane" style="padding-left: 20px;"></i></a>Send
+            </div>
+
+            <!--end of second part-->
+
+            <!--this is third part-->
+
+
+            <div class="third" style="padding: 5px;">
+                <img src="Profile logo of yash.jpg" alt="yash sharma" height="50px" width="50px" style="float: left;">
+                <p>Yash Sharma</p>
+                <p style="font-size: 10px;">10 Million-Followers</p>
+                <p style="font-size: 10px;">Youtube Channel</p>
+                <i class="fa-solid fa-ellipsis" style="float:right;padding-right: 20px;"></i><br>
+                <p>Published new video on CSS Property Box model. this video will run through few more 
+                    properties that make up the box-model, Margin, Border, Padding, Content-Height &
+                     Width </p>
+                     <iframe width="853" height="480" src="https://www.youtube.com/embed/YJtlXrzXXFk" title="CSS Tutorial: CSS Display Property | Web Development Tutorials #24" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 100%; height: 70%;"></iframe>
+                     <img src="Like.svg" alt="like">
+                <img src="Appreciate.svg" alt="appricate">
+                <img src="Clap.svg" alt="clap">
+                
+                <span style="padding-left: 10px;">20. Comments</span>
+                <hr><br>
+                <a href="#"><i class="fa-regular fa-thumbs-up" style="margin-left: 10px;"></i></a>Like
+                <a href="#"><i class="fa-regular fa-comment" style="padding-left: 20px;"></i></a>Comment
+                <a href="#"><i class="fa-solid fa-share" style="padding-left: 20px;"></i></a>Share
+                <a href="#"><i class="fa-solid fa-paper-plane" style="padding-left: 20px;"></i></a>Send
+            </div>
+            <!--end of third pard as well middile section-->
+        </div>
+
+        <!--this is right section of this page which is news section-->
+
+
+        <div class="right">
+            <div class="news1">
+              <h4>Linkdin News </h4>
+              <ul>
+                <li>Indian corsses 3,58,974 daily cases</li>
+                <p style="font-size: 12px; opacity: 50%;">10h ago - 5,043 readers</p>
+                <li>Zomato files for $1018 IPO</li>
+                <p style="font-size: 12px; opacity: 50%;">13h ago - 52043 readers</p>
+                <li>Jobs pay ,in IT soar</li>
+                <p style="font-size: 12px; opacity: 50%;">1d ago - 7865 readers</p>
+                <li>Google saving $1B a year from WFH</li>
+                <p style="font-size: 12px; opacity: 50%;">2d ago - 7865 readers</p>
+              </ul>
+            </div>
+            <div class="news2">
+                <h4>Today's most viewed courses</h4>
+                <ul>
+                    <li>Indian corsses 3,58,974 daily cases</li>
+                    <p style="font-size: 12px; opacity: 50%;">Top news 9874 -reviews</p>
+                    <li>Indian corsses 3,58,974 daily cases</li>
+                    <p style="font-size: 12px; opacity: 50%;">Top news 9874 -reviews</p>
+                </ul>
+            </div>
+            <div class="news3">
+                <h4> Add to your feed</h4><br>
+                <img src="unilever logo.png" alt="uniliver logo" height="50px" width="50px" style="float: left;">
+                Uniliver <br>
+                <p style="font-size: 12px; opacity: 50%;">Company-Consuumer Goods</p>
+                <button style="border-radius: 50px; align-items: center; width: 140px; height: 30px;z-index: 1; margin-left: -10px; margin-top: 10px;">+Follow</button><br><br>
+                <hr>
+                <br>
+                <img src="LinkedIn logo.png"alt="linkdin" width="50px" height="50px" style="float: left;">
+                Linkedin
+                <p style="font-size: 12px; opacity: 50%;">Company-Internet</p>
+                <button style="border-radius: 50px; align-items: center; width: 100px; height: 30px;z-index: 1; margin-left: -10px; margin-top: 20px;">+Follow</button><br><br>
+                <hr>
+                <br>
+                <img src="myntra logo.jpg" alt="myntra logo" height="50px" width="50px" style="float: left;">
+                Myntra
+                <p style="font-size: 12px; opacity: 50%;">Company-Internet</p>
+                <button style="border-radius: 50px; align-items: center; width: 100px; height: 30px;z-index: 1; margin-left: -10px; margin-top: 20px;">+Follow</button><br><br>
+            </div>
+            </div>
+            <!--thsi is footer part where i use copy right -->
+            <div class="footer">&copy;
+                Copyright 2023 by Digvijay Kumar
+            </div>
+    </div>
+</body>
+</html>

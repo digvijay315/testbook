@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: radial-gradient(red,green,blue);
+        }
+    </style>
+</head>
+<body>
+    <h1>Function Pratice</h1>
+    <input type="text" id="num1">
+    <input type="text" id="num2"><br>
+    <button id="add" onclick="sum()">add</button><br>
+    result:
+    <p id="res"></p>
+</body>
+<script>
+    function sum() {
+        var a= document.getElementById("num1").value;
+        var b= document.getElementById("num2").value;
+        var result=parseInt(a)+parseInt(b);
+        document.getElementById("res").innerHTML=result;
+    }
+</script>
+</html>

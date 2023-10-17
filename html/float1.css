@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+.i2{
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    padding: 5px;
+    float: left;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    
+}
+.m1{
+    
+    margin: 10px;
+    clear: right;
+    
+}
+p{
+    text-indent: 20px;
+    
+}
+.i1{
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    padding: 5px;
+    float: right; 
+    
+}
+

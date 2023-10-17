@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    //let students=["digvijay","subodh","ram"];
+    //document.writeln(students[1]);
+   // let students=[
+   //     ["digvijay",70,"dumka"],
+  //      ["subodh",80,"dumka"]
+ //       ];
+   // document.write(students[0]);
+  // let students={
+    //name:"digvijay",
+   // class:"six",
+   // city:"dumka"
+  // }
+  // document.writeln("class is "+students.class);
+  let students=
+    {
+        name:"digvijay",
+        class:"six",
+        city:"dumka",
+        display:function(){
+            document.writeln(this.name);
+        }
+    }
+    let employee={
+        name:"subodh",
+    }
+    let result= students.display.bind(employee);
+    document.writeln(result());
+</script>
+</html>

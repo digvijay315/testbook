@@ -1,0 +1,16 @@
+body{
+    background-image: url(52863657-smiley-face-showing-thumbs-up.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+p{
+    color:#131212;
+    
+    width: 5%;
+    opacity: 1;
+}
+h1:hover{
+color: blue;
+}

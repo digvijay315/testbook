@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name"><br><br>
+    <button id="add">add</button>
+    <br><br>
+</body>
+<script>
+    let name=new Array("digvijay","ankit","subodh");
+    let name2=new Array("rahul","shyam");
+    /*for(var i=0;i<name.length;i++)
+    {
+        document.writeln(name[i]);
+        document.writeln("<br>");
+    }*/
+        document.getElementById("add").onclick=function(){
+            name.push(document.getElementById("name").value);
+            document.writeln(name);
+
+    }
+   
+   
+    /*name();
+    name.pop();
+    name.shift();
+    name.unshift("digvijay");
+    document.writeln(name);
+    let res= name.concat(name2);
+    document.writeln(res);
+    res.indexOf("digvijay");*/
+    </script>
+</html>

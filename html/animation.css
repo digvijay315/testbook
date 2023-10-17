@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(25, 0, 255);
+    
+}
+.box1{
+    height: 100px;
+    width: 10%;
+    background-color: rgb(4, 19, 11);
+    position: relative;
+    animation-name: first;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes first {
+   0%{
+    top: 0%;
+    left: 0%;
+   }
+   25%{
+    top: 0%;
+    left: 90%;
+   }
+   55%{
+    top: 80%;
+    left: 90%;
+   }
+   75%
+   {
+    top: 80%;
+    left: 0%;
+   }
+   100%
+   {
+    top: 0%;
+    left: 0%;
+   }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hello">sum of two numbers:</p><br>
+    <input type="text" name="" id="firstnumber"><br><br>
+    <input type="text" name="" id="secondnumber"><br>
+    <br>
+    <button id="b1">click here</button>
+</body>
+<script>
+    var a
+    var b
+    function sum(a,b){
+        var total=a+b;
+        document.writeln("the result is "+total);
+    }
+    //sum(20,30);
+    document.getElementById("b1").onclick=function(){
+        var a=document.getElementById("firstnumber").value;
+        var b=document.getElementById("secondnumber").value;
+        var sum1=parseInt(a)+parseInt(b);
+        document.getElementById("hello").innerHTML=sum1;
+    }
+    
+</script>
+</html>

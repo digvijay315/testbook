@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 500px;
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "hh hh hh hh"
+                        "ss mm mm mm"
+                        "ss ff ff ff";
+                    
+}
+.box1{
+   
+    background-color: rgb(206, 120, 21);
+    grid-area: hh;
+   
+}
+.box2{
+   
+    background-color: rgb(4, 45, 80);
+    grid-area: ss;
+    
+}
+.box3{
+    
+    background-color: rgb(13, 179, 13);
+    grid-area: mm;
+  
+}
+.box4{
+    
+    background-color: rgb(17, 17, 17);
+    grid-area: ff;
+    
+    
+}
+

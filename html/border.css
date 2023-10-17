@@ -1,0 +1,16 @@
+p{
+ text-align: left;
+ font-size: 50px;
+ border-style: solid;
+ margin-right: 30%;
+ padding-left: 15%;
+ border-radius: 20%;
+ border-width: 10px;
+ border-left-style: dotted;
+}
+table{
+    width: 30%;
+    font-size: 30px;
+    border-collapse: collapse;
+    border-radius: 50px;
+}

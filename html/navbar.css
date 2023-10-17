@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu ul {
+    display: flex;
+    background-color: aqua;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.menu ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+.drop1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    position: absolute;
+}
+
+.menu ul li ul li{
+    display: none;
+}
+#drop2:hover ul li{
+    display: block;
+}
+#drop4{
+    display: none;
+    position: absolute;
+    
+}
+#drop3:hover #drop4{
+    display: block;
+    left: 100%;
+    top: 50px;
+}
+    

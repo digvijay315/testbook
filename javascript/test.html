@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+   /* let student={
+        name:"rahul",
+        class:"6th",
+        address:"dumka",
+        //display:function(){
+            //document.writeln(this.name);
+       // }
+    }
+    document.writeln(student.name);
+    function person(first,last,age){
+        this.firstname=first
+        this.lastname=last;
+        this.age=age;
+    }
+        let first=new person("digvijay","kumar",30);
+        document.writeln(first.lastname);*/
+
+    let student={
+        name:"digvijay",
+        class: "six",
+        address:"dumka",
+        display:function(){
+            document.writeln(this.name);
+        }
+    }
+   // document.writeln(student.display());
+   
+    //document.writeln(student.name);
+     function details(name,lname,address1){
+        this.name=name;
+        this.lname=lname;
+        this.address1=address1;
+    }
+    let student1=new details("raj","kumar","dumka");
+    //document.writeln(student1.name);
+    let res=student.display.bind(student1);
+    document.writeln(res());
+    
+    let employee=["raj","kumar"];
+    //document.writeln(employee);
+    let employee1=[
+        ["raj","kumar"],
+        ["raja","kumar"],
+    ];
+    //document.writeln(employee1);
+</script>
+</html>
